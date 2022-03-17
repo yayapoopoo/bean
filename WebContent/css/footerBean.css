@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.f_nav {
+	text-align: left;
+	margin-left: 200px;
+}
+
+#f_bottom {
+	background-color: #E2E2E2;
+	text-align: center;
+}

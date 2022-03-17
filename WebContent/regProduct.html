@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>regProduct</title>
+<link rel="stylesheet" href="css/regProduct.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap"
+	rel="stylesheet">
+<script src="https://kit.fontawesome.com/4f2dbfca83.js"
+	crossorigin="anonymous"></script>
+<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#header").load("headerBean.html")
+	});
+	</script>
+</head>
+<body>
+<div id="header"></div>
+	<div class="regContainer">
+		<form>
+			<div class="regTitle">
+				<h1>상품등록</h1>
+			</div>
+			<div class="regInput">
+				<input type="text" id="pName" required> <label for="name"><i
+					class="fab fa-product-hunt"></i>Name</label>
+			</div>
+			<div class="regInput">
+				<input type="text" id="pPrice" required> <label for="pPrice"><i
+					class="fab fa-product-hunt"></i>Price</label>
+			</div>
+			<div class="regInput">
+				<input type="text" id="pQty" required> <label for="pQty"><i
+					class="fab fa-product-hunt"></i>Qty</label>
+			</div>
+			<div class="regInput">
+				<textarea id="pDes" rows="8" required></textarea>
+				<label for="pDes"><i class="fab fa-product-hunt"></i>Description</label>
+			</div>
+			<button type="submit">SUBMIT</button>
+		</form>
+		<div class="regBottom">
+			<div class="logo">
+				<i class="fas fa-coffee fa-5x"></i>
+			</div>
+			<div class="contact">
+				<address>인천광역시 미추홀구 학익동 663-1, 5층</address>
+				<P>Copyright&copy;2021 by Design All Right Reserved
+			</div>
+		</div>
+	</div>
+</body>
+</html>

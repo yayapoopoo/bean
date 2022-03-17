@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;    
+}
+html, body {
+	font-size: 14px;	
+	height: 100%;
+  	margin: 0;	
+  	 padding-bottom: 75px;
+}
+
+li {
+	list-style: none;
+}
+.wrap {
+ height: 100%;
+ 	
+}
+.contents {
+ height: calc(100% - 100px);
+ overflow: auto;
+}
+
+.container {
+	background: transparent;
+	
+}
+
+.btn:focus, .btn:active {
+	outline: none !important;
+	box-shadow: none;
+}
+
+.nav-tabs>li {
+	float: none;
+	display: inline-block;
+	zoom: 1;
+}
+
+.nav-tabs {
+	text-align: center;
+}
+
+#f_top {
+	margin-top:20px;
+}
+
+
+div.row {
+	margin-bottom: 10px;
+}
+
+.image_detail_box {
+	width: 500px;
+	height: 500px;
+	float: left;
+}
+
+
+
+.image_thumbnail_box, .image_thumbnail_box>ul {
+	width: 500px;
+	height: 100px;
+	float: left;
+}
+
+.image_thumbnail_box>ul>li img {
+	width: 100px;
+	height: 100px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.image_thumbnail_box>ul>li img:hover {
+	border: 1px solid #8B4F1D;
+}
+
+.item_detail_info_box {
+	height: 600px;
+	padding-top: 100px;
+	box-sizing: border-box;
+}
+
+.item_detail_title {
+	position: relative;
+}
+
+.item_detail_description {
+	float: left;
+}
+
+.item_detail_description_icon {
+	float: right;
+}
+
+.item_detail_list {
+	float: left;
+	margin-top: 10px;
+	width: 100%;
+	border-top: 1px solid #DCDCDC;
+}
+
+.item_detail_list dl:nth-child(1) {
+	padding-top: 10px;
+}
+
+.item_detail_list dt {
+	width: 22%;
+	line-height: 18px;
+	float: left;
+}
+
+.item_detail_list dd {
+	width: 78%;
+	line-height: 18px;
+}
+
+.item_detail_option_box {
+	width: 100%;
+	border-top: 1px solid #DCDCDC;
+	border-bottom: 1px solid #A9A9A9;
+}
+
+.item_detail_option_box dt {
+	width: 22%;
+	line-height: 18px;
+	float: left;
+}
+
+.item_detail_option_box dl:nth-child(1) {
+	padding-top: 10px;
+}
+
+.item_detail_option_box dd {
+	width: 78%;
+	line-height: 18px;
+}
+
+.item_detail_btn_box {
+	width: 100%;
+	padding: 20px 0 0 0;
+}
+
+.item_detail_btn_box button {
+	display: inline-block;
+	width: calc(30%);
+	height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: white;
+	border: 1px solid #cccccc;
+}
+
+.item_detail_btn_box button:nth-child(3) {
+	display: inline-block;
+	width: calc(30%);
+	height: 50px;
+	font-size: 16px;
+	color: white;
+	background-color: #d26f64;
+	border: 1px solid #d26f64;
+}
+
+.nav-tabs {
+	margin: 50px 0 50px 0;
+}
+
+.font1 {
+	color: #8B4F1D;
+}
+
+.input_op_cnt {
+	
+}
+
+
+.clear { clear: both; height: 70px; }

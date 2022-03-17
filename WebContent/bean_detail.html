@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<!-- <link rel="stylesheet"	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/detail/detail.css">
+<link rel="stylesheet" type="text/css" href="css/headerBean.css">
+<link rel="stylesheet" type="text/css" href="css/footerBean.css">
+
+<script src="jquery-3.6.0.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#header").load("headerBean.html")
+	});
+
+	$(document).ready(function() {
+		$("#footer").load("footerBean.html")
+	});
+
+	$(document).ready(function() {
+		$(".image_thumbnail_box>ul>li>img").click(function() {
+			var src = $(this).attr("src").replace("thumb", "detail");
+			$(".image_detail_box>img").attr({
+				src : src
+			//,width:"500px"
+			//,height:"500px"
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="header"></div>		
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<div class="image_detail_box">
+					<img alt="" src="images/detail/detail_01.jpg">
+				</div>
+				<div class="image_thumbnail_box ">
+					<ul class="justify-content-center">
+						<li><img alt="" src="images/detail/thumb_01.jpg"></li>
+						<li><img alt="" src="images/detail/thumb_02.jpg"></li>
+						<li><img alt="" src="images/detail/thumb_03.jpg"></li>
+						<li><img alt="" src="images/detail/thumb_04.jpg"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="item_detail_info_box ">
+					<div class="item_detail_title">
+						<h3>홀릭 에스프레소</h3>
+						<div class="item_detail_description">#강한 바디와 단맛의 조화</div>
+						<div class="item_detail_description_icon">
+							<img alt="" src="images/detail/icon_sns.png">
+						</div>
+					</div>
+					<div class="item_detail_list">
+						<dl>
+							<dt>정가</dt>
+							<dd>4,900</dd>
+						</dl>
+						<dl>
+							<dt>판매가</dt>
+							<dd>3,900</dd>
+						</dl>
+						<dl>
+							<dt>구매혜택</dt>
+							<dd>적립 마일리지 : +165원(상품:165원)</dd>
+						</dl>
+						<dl>
+							<dt>제조사</dt>
+							<dd>(주)콩볶는 사람들</dd>
+						</dl>
+						<dl>
+							<dt>원산지</dt>
+							<dd>콜롬비아, 브라질, 에티오피타, 베트남</dd>
+						</dl>
+						<dl>
+							<dt>용량</dt>
+							<dd>200g, 500g, 1kg</dd>
+						</dl>
+						<div class="item_detail_option_box">
+							<dl>
+								<dt>용량선택</dt>
+								<dd>
+									<select>
+										<option>= 옵션 : 가격 =</option>
+										<option>200g</option>
+										<option>500g : + 4,100</option>
+										<option>1kg : + 9,600</option>
+									</select>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									분쇄선택<span class="font1">(필수)</span>
+								</dt>
+								<dd>
+									<select>
+										<option>추가상품</option>
+										<option>홀빈(분쇄안함)</option>
+										<option>프렌치프레스 분쇄</option>
+										<option>핸드드립/커피메이커 분쇄</option>
+										<option>더치용 분쇄</option>
+										<option>모카포트 분쇄</option>
+										<option>에스프레소 분쇄</option>
+									</select>
+								</dd>
+							</dl>
+						</div>
+<!-- 						<div class="item_calc_box">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td class="col-md-4"></td>
+										<td class="col-md-2"><img alt=""
+											src="images/detail/btn_count_down.png"> <input
+											type="text" class="input_op_cnt"> <img alt=""
+											src="images/detail/btn_count_up.png"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+ -->						<div class="item_detail_btn_box">
+							<button class="btn">장바구니</button>
+							<button class="btn">찜하기</button>
+							<button class="btn">바로구매</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav nav-tabs">
+					<li class="nav-item"><a class="nav-link active"
+						data-toggle="tab" href="#tab1">상품상세정보</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab"
+						href="#tab2">배송안내</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab"
+						href="#tab3">상품후기</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab"
+						href="#tab4">상품문의</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="tab-content-box">
+		<div class="row">
+			<div class="col">
+				<div class="tab-content">
+					<div class="tab-pane fade show active" id="tab1">
+						<img src="images/detail/holices.jpg">
+					</div>
+					<div class="tab-pane" id="tab2">
+						<h3>배송안내</h3>
+						<div class="table-responsive">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td class="col-md-2">당일출고 안내</td>
+										<td class="col-md-10">원두커피의 경우 신선한 원두공급을 위해 오후 3시까지 입금
+											확인된 주문건에 한해 당일 로스팅 후 당일 출고됩니다.<br> 수제 과일 청의 경우 신선도를 위해
+											오후 3시까지 입금 확인된 주문건에 한해 당일 제조 후 당일 출고됩니다.
+										</td>
+									</tr>
+									<tr>
+										<td>배송 안내</td>
+										<td>1. 오후 3시까지 입금 확인된 주문건만 당일 로스팅됩니다.<br> 2. 토, 일요일
+											및 공휴일 주문건은 다음날 로스팅 후 발송됩니다.<br> 3. 배송은 출고일부터 1~3일 소요 될 수
+											있습니다.<br> 4. 제주, 도서 산간 지역은 추가요금이 발생 할 수 있습니다.
+										</td>
+									</tr>
+									<tr>
+										<td>주의 사항</td>
+										<td>고객님 부주의로 분쇄옵션사항을 잘못 선택하였을 경우 교환 및 환불이 불가능한점 양해
+											부탁드립니다.<br> 고객센터로 먼저 연락을 주시면 친절하게 교환 및 반품방법에 대해 안내
+											해드립니다.<br> 고객님 임의대로 반품, 교환 등을하여 제품을 보내실 경우, 제품이 유실되거나
+											처리기간이 길어질 수 있으니 꼭 고객센터(051-526-1183~4)로 먼저 연락을 주시면 감사하겠습니다.<br>
+											※ 반품시 편의점 택배는 이용이 불가합니다.
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab3">
+						<h3>상품후기</h3>
+						<div class="table-responsive">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td class="col-md-2"><img alt=""
+											src="images/detail/best_icon.png"></td>
+										<td class="col-md-7">고소하고 적절히 기분좋은 쓴맛이 좋네요</td>
+										<td class="col-md-2">네이버페이 구매자</td>
+										<td class="col-md-1">2021.10.18</td>
+									</tr>
+									<tr>
+										<td class="col-md-2">★★★★★</td>
+										<td class="col-md-7">고소하고 적절히 기분좋은 쓴맛이 좋네요</td>
+										<td class="col-md-2">네이버페이 구매자</td>
+										<td class="col-md-1">2021.10.18</td>
+									</tr>
+									<tr>
+										<td class="col-md-2">★★★★★</td>
+										<td class="col-md-7">고소하고 적절히 기분좋은 쓴맛이 좋네요</td>
+										<td class="col-md-2">네이버페이 구매자</td>
+										<td class="col-md-1">2021.10.18</td>
+									</tr>
+									<tr>
+										<td class="col-md-2">★★★★★</td>
+										<td class="col-md-7">고소하고 적절히 기분좋은 쓴맛이 좋네요</td>
+										<td class="col-md-2">네이버페이 구매자</td>
+										<td class="col-md-1">2021.10.18</td>
+									</tr>
+									<tr>
+										<td class="col-md-2">★★★★★</td>
+										<td class="col-md-7">고소하고 적절히 기분좋은 쓴맛이 좋네요</td>
+										<td class="col-md-2">네이버페이 구매자</td>
+										<td class="col-md-1">2021.10.18</td>
+									</tr>
+									<tr>
+										<td class="col-md-2">★★★★★</td>
+										<td class="col-md-7">고소하고 적절히 기분좋은 쓴맛이 좋네요</td>
+										<td class="col-md-2">네이버페이 구매자</td>
+										<td class="col-md-1">2021.10.18</td>
+									</tr>
+									<tr>
+										<td class="col-md-2">★★★★★</td>
+										<td class="col-md-7">고소하고 적절히 기분좋은 쓴맛이 좋네요</td>
+										<td class="col-md-2">네이버페이 구매자</td>
+										<td class="col-md-1">2021.10.18</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<nav aria-label="...">
+							<ul class="pagination justify-content-center">
+								<li class="page-item disabled"><a class="page-link"
+									href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item " aria-current="page"><a
+									class="page-link" href="#">2 </a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">Next</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="tab-pane" id="tab4">
+						<h3>상품Q&amp;A</h3>
+						<div class="table-responsive">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td class="col-md-1">14</td>
+										<td class="col-md-7"><span><img alt=""
+												src="images/detail/icon_board_secret.png"></span> 주문번호
+											11111111111</td>
+										<td class="col-md-2">홍길동</td>
+										<td class="col-md-1">2021.10.18</td>
+										<td class="col-md-1">답변완료</td>
+									</tr>
+									<tr>
+										<td class="col-md-1">13</td>
+										<td class="col-md-7"><span><img alt=""
+												src="images/detail/icon_board_secret.png"></span> 주문번호
+											11111111111</td>
+										<td class="col-md-2">홍길동</td>
+										<td class="col-md-1">2021.10.18</td>
+										<td class="col-md-1">답변완료</td>
+									</tr>
+									<tr>
+										<td class="col-md-1">12</td>
+										<td class="col-md-7"><span><img alt=""
+												src="images/detail/icon_board_secret.png"></span> 주문번호
+											11111111111</td>
+										<td class="col-md-2">홍길동</td>
+										<td class="col-md-1">2021.10.18</td>
+										<td class="col-md-1">답변완료</td>
+									</tr>
+									<tr>
+										<td class="col-md-1">11</td>
+										<td class="col-md-7"><span><img alt=""
+												src="images/detail/icon_board_secret.png"></span> 주문번호
+											11111111111</td>
+										<td class="col-md-2">홍길동</td>
+										<td class="col-md-1">2021.10.18</td>
+										<td class="col-md-1">답변완료</td>
+									</tr>
+									<tr>
+										<td class="col-md-1">10</td>
+										<td class="col-md-7"><span><img alt=""
+												src="images/detail/icon_board_secret.png"></span> 주문번호
+											11111111111</td>
+										<td class="col-md-2">홍길동</td>
+										<td class="col-md-1">2021.10.18</td>
+										<td class="col-md-1">답변완료</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<nav aria-label="...">
+							<ul class="pagination justify-content-center">
+								<li class="page-item disabled"><a class="page-link"
+									href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item " aria-current="page"><a
+									class="page-link" href="#">2 </a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">Next</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"> </div>
+</body>
+</html>

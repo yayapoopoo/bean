@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<link rel="stylesheet" href="css/log.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap"
+	rel="stylesheet">
+<script src="https://kit.fontawesome.com/4f2dbfca83.js"
+	crossorigin="anonymous"></script>
+<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#header").load("headerBean.html")
+	});
+	</script>
+</head>
+<body>
+<div id="header"></div>
+	<div class="regContainer">
+		<form>
+			<div class="regTitle">
+				<h1>회원 가입</h1>
+			</div>
+			<div class="regInput">
+				<input type="text" id="id" required> <label for="id"><i
+					class="fab fa-product-hunt"></i>아이디</label>
+			</div>
+			<div class="regInput">
+				<input type="text" id="pass" required> <label for="pass"><i
+					class="fab fa-product-hunt"></i>비밀번호</label>
+			</div>
+			<div class="regInput">
+				<input type="text" id="name" required> <label for="name"><i
+					class="fab fa-product-hunt"></i>이름</label>
+			</div>
+			<div class="regInput">
+				<input type="text" id="tnum" required> <label for="tnum"><i
+					class="fab fa-product-hunt"></i>전화번호</label>
+			</div>
+			<button type="submit">가입</button>
+		</form>
+		<div class="regBottom">
+			<div class="logo">
+				<i class="fas fa-coffee fa-5x"></i>
+			</div>
+			<div class="contact">
+				<address>인천광역시 미추홀구 학익동 663-1, 5층</address>
+				<P>Copyright&copy;2021 by Design All Right Reserved
+			</div>
+		</div>
+	</div>
+</body>
+</html>
